@@ -1,0 +1,17 @@
+/* スライドの動き等速 */
+.swiper-wrapper {
+    transition-timing-function: linear;
+   }
+
+   /* 画像のサイズ調整 */
+   .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* 画像の縦横比を保つ */
+   }
+
+   /* スライド間の余白とスライドの幅 */
+   .swiper-slide {
+    margin-right: 24px;
+    width: calc((100% - 6 * 24px) / 7); /* 7枚のスライドが一度に表示され、24pxの余白が各スライド間に6つある */
+   }
